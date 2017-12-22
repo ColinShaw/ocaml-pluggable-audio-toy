@@ -11,14 +11,14 @@ C_FILES       = io_c.c
 ao:
 	rm -rf $(BUILD_DIR)
 	mkdir $(BUILD_DIR)
-	cp test/* $(BUILD_DIR)
+	cp example/* $(BUILD_DIR)
 	cd $(BUILD_DIR) && gcc -o prog ao.c $(C_LIBS) $(C_OPTS)
 	cp $(BUILD_DIR)/prog prog
 
 mp3:
 	rm -rf $(BUILD_DIR)
 	mkdir $(BUILD_DIR)
-	cp test/* $(BUILD_DIR)
+	cp example/* $(BUILD_DIR)
 	cd $(BUILD_DIR) && gcc -o prog mpg123.c $(C_LIBS) $(C_OPTS)
 	cp $(BUILD_DIR)/prog prog
 
